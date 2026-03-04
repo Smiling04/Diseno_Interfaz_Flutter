@@ -21,7 +21,8 @@ class MainApp extends StatelessWidget {
           actions: const [
             Padding(
               padding: EdgeInsets.only(right: 15),
-              child: Icon(Icons.star),
+              child: Icon(Icons.star,
+                        color: Colors.deepPurpleAccent, size: 30),
             )
           ],
         ),
@@ -34,8 +35,9 @@ class MainApp extends StatelessWidget {
 
                 Image(
                   image: NetworkImage(
-                      'https://www.antarcticacruises.com/wp-content/uploads/2025/04/Arctic-Bear-4.jpg'),
-                  height: 200,
+                      'https://st4.depositphotos.com/7402484/28607/i/450/depositphotos_286078764-stock-photo-polar-bear-sunset-arctic-bear.jpg'),
+                  height: 400,
+                  width: 600,
                   fit: BoxFit.cover,
                 ),
 
@@ -95,8 +97,6 @@ class MainApp extends StatelessWidget {
                         fontSize: 20,
                       ),
                     ),
-                    Icon(Icons.star,
-                        color: Colors.deepPurpleAccent, size: 30),
                   ],
                 ),
 
@@ -144,8 +144,8 @@ class MainApp extends StatelessWidget {
                       width: 50,
                       alignment: Alignment.center,
                       decoration: BoxDecoration(
-                         borderRadius: BorderRadius.circular(8),
-                        ),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
                       child: const Icon(
                         Icons.favorite,
                         color: Color.fromARGB(255, 182, 11, 11),
